@@ -46,6 +46,12 @@ const linksList = [
     icon: 'school',
     to: '/typography',
   },
+  {
+    title: 'Colors',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/colors',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
