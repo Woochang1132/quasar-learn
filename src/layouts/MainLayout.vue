@@ -64,6 +64,12 @@ const linksList = [
     icon: 'school',
     to: '/breakpoints',
   },
+  {
+    title: 'Classes & Varialbes',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/classes-variables',
+  },
 ];
 
 const leftDrawerOpen = ref(false);
