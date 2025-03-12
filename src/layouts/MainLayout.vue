@@ -117,5 +117,11 @@ const linksList = [
   //   icon: 'school',
   //   to: '/profile-page',
   // },
+  {
+    title: 'Form Handling',
+    caption: 'quasar.dev',
+    icon: 'school',
+    to: '/form-handling',
+  },
 ];
 </script>
