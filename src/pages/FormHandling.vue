@@ -79,7 +79,10 @@
 </template>
 
 <script setup>
+import { useQuasar } from 'quasar';
 import { ref } from 'vue';
+
+const $q = useQuasar();
 
 const myForm = ref(null);
 const form = ref({
@@ -111,9 +114,13 @@ const validate = () => {
 const onSubmit = () => {
   if (form.value.accept !== true) {
     alert('동의 해주세요');
-  } else {
-    alert('성공하였습니다.');
+    return;
   }
+  $q.loading.show();
+  setTimeout(() => {
+    $q.loading.hide();
+    alert('성공하였습니다.');
+  }, 3000);
 };
 
 const reset = () => {

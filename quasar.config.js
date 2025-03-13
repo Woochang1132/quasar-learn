@@ -11,7 +11,12 @@ export default defineConfig((/* ctx */) => {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli-vite/boot-files
-    boot: ['initialization', 'constants'],
+    boot: [
+      'initialization',
+      'constants',
+      'loading-plugin',
+      'loading-bar-plugin',
+    ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
     css: ['app.scss'],
@@ -84,6 +89,11 @@ export default defineConfig((/* ctx */) => {
         screen: {
           bodyClasses: true, // <<< add this
         },
+        // loading: {
+        //   delay: 2000,
+        //   message: '로딩중~~!!',
+        //   spinnerSize: 40,
+        // },
       },
 
       // iconSet: 'material-icons', // Quasar icon set
@@ -97,7 +107,7 @@ export default defineConfig((/* ctx */) => {
       // directives: [],
 
       // Quasar plugins
-      plugins: ['LocalStorage'],
+      plugins: ['LocalStorage', 'Loading', 'LoadingBar'],
     },
 
     // animations: 'all', // --- includes all animations
