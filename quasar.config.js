@@ -16,6 +16,7 @@ export default defineConfig((/* ctx */) => {
       'constants',
       'loading-plugin',
       'loading-bar-plugin',
+      'quasar-lang-pack',
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#css
@@ -84,6 +85,7 @@ export default defineConfig((/* ctx */) => {
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#framework
     framework: {
+      lang: 'ko-KR',
       cssAddon: true,
       config: {
         screen: {
