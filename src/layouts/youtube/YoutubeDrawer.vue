@@ -1,5 +1,11 @@
 <template>
-  <q-drawer v-model="drawer" :width="240">
+  <q-drawer
+    bordered
+    v-model="drawer"
+    :width="240"
+    :mini="$q.screen.lt.sm"
+    :breakpoint="$q.screen.sizes.sm"
+  >
     <q-scroll-area class="fit">
       <q-list>
         <template v-for="(menuItem, index) in menuList1" :key="index">
