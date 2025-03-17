@@ -17,7 +17,7 @@
         <!-- dark_mode -->
         <q-btn round size="sm" class="q-ml-md">
           <q-avatar>
-            <img src="/public/bird-2.jpg" />
+            <img src="/bird-2.jpg" />
           </q-avatar>
           <q-menu :offset="[0, 10]">
             <q-list style="min-width: 100px">
